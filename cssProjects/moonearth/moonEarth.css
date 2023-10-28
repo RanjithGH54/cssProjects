@@ -1,0 +1,72 @@
+.box{
+    background-color: black;
+    height: 1000px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sun{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 100px white;
+}
+.earth{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    animation: my-animation 5s linear infinite;
+    
+}
+.earth::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    top: 150px;
+    right: -50px;
+    
+    
+}
+.moon{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    right: -100px;
+    top: 100px;
+    border-top: 3px solid white;
+    animation: my-animation 2s linear infinite;
+    
+}
+.moon::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(231, 217, 217);
+    height: 30px;
+    width: 30px;
+    right: -13px;
+    top: 70px;
+    box-shadow: 0 0 100px white;
+    
+    
+}
+
+
+
+
+@keyframes my-animation {
+    to{
+        transform: rotate(360deg);
+    }
+}

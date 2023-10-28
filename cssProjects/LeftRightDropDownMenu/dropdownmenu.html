@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .box{
+            display: inline-block;
+            position: relative;
+          }
+          .btn{
+            background-color: lightgreen;
+            padding: 10px;
+            cursor: pointer;
+          }
+          .ddm{
+            display: none;
+            background-color: bisque;
+            
+          }
+          .box:hover .ddm{
+            display: block;
+          }
+          a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+          }
+          a:hover{
+            background-color: lightseagreen;
+          }
+          .box:hover .btn{
+            background-color: rgb(210, 30, 30);
+          }
+    </style>
+</head>
+<body>
+    <div class="box" style="float: left; ">
+        <button class="btn">left</button>
+        <div class="ddm" style="position: absolute;
+        left: 0;">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+    </div>
+    <div class="box" style="float: right;">
+      <button class="btn">right</button>
+      <div class="ddm" style="position: absolute;
+      right: 0;">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+</body>
+</html>
